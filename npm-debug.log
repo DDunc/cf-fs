@@ -1,0 +1,86 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/Users/Duncan/.node/bin/node',
+1 verbose cli   '/Users/Duncan/.node/bin/npm',
+1 verbose cli   'install',
+1 verbose cli   'sea_d49_greet' ]
+2 info using npm@2.11.3
+3 info using node@v0.12.7
+4 verbose install initial load of /Users/Duncan/cf/package.json
+5 verbose installManyTop reading scoped package data from /Users/Duncan/cf/node_modules/sea_d49_greet/package.json
+6 info package.json sea_d49_greet@0.1.0 No README data
+7 verbose readDependencies loading dependencies from /Users/Duncan/cf/package.json
+8 verbose install sea_d49_greet is installed as 0.1.0
+9 silly cache add args [ 'sea_d49_greet', null ]
+10 verbose cache add spec sea_d49_greet
+11 silly cache add parsed spec { raw: 'sea_d49_greet',
+11 silly cache add   scope: null,
+11 silly cache add   name: 'sea_d49_greet',
+11 silly cache add   rawSpec: '',
+11 silly cache add   spec: '*',
+11 silly cache add   type: 'range' }
+12 silly addNamed sea_d49_greet@*
+13 verbose addNamed "*" is a valid semver range for sea_d49_greet
+14 silly addNameRange { name: 'sea_d49_greet', range: '*', hasData: false }
+15 silly mapToRegistry name sea_d49_greet
+16 silly mapToRegistry using default registry
+17 silly mapToRegistry registry https://registry.npmjs.org/
+18 silly mapToRegistry uri https://registry.npmjs.org/sea_d49_greet
+19 verbose addNameRange registry:https://registry.npmjs.org/sea_d49_greet not in flight; fetching
+20 verbose request uri https://registry.npmjs.org/sea_d49_greet
+21 verbose request no auth needed
+22 info attempt registry request try #1 at 10:16:32
+23 verbose request id 89671215c184ea48
+24 http request GET https://registry.npmjs.org/sea_d49_greet
+25 http 404 https://registry.npmjs.org/sea_d49_greet
+26 verbose headers { 'content-type': 'application/json',
+26 verbose headers   'cache-control': 'max-age=0',
+26 verbose headers   'content-length': '2',
+26 verbose headers   'accept-ranges': 'bytes',
+26 verbose headers   date: 'Tue, 01 Sep 2015 17:16:32 GMT',
+26 verbose headers   via: '1.1 varnish',
+26 verbose headers   age: '0',
+26 verbose headers   connection: 'keep-alive',
+26 verbose headers   'x-served-by': 'cache-sjc3123-SJC',
+26 verbose headers   'x-cache': 'MISS',
+26 verbose headers   'x-cache-hits': '0',
+26 verbose headers   'x-timer': 'S1441127792.822275,VS0,VE88' }
+27 silly get cb [ 404,
+27 silly get   { 'content-type': 'application/json',
+27 silly get     'cache-control': 'max-age=0',
+27 silly get     'content-length': '2',
+27 silly get     'accept-ranges': 'bytes',
+27 silly get     date: 'Tue, 01 Sep 2015 17:16:32 GMT',
+27 silly get     via: '1.1 varnish',
+27 silly get     age: '0',
+27 silly get     connection: 'keep-alive',
+27 silly get     'x-served-by': 'cache-sjc3123-SJC',
+27 silly get     'x-cache': 'MISS',
+27 silly get     'x-cache-hits': '0',
+27 silly get     'x-timer': 'S1441127792.822275,VS0,VE88' } ]
+28 verbose stack Error: Registry returned 404 for GET on https://registry.npmjs.org/sea_d49_greet
+28 verbose stack     at CachingRegistryClient.<anonymous> (/Users/Duncan/.node/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:239:14)
+28 verbose stack     at Request._callback (/Users/Duncan/.node/lib/node_modules/npm/node_modules/npm-registry-client/lib/request.js:170:14)
+28 verbose stack     at Request.self.callback (/Users/Duncan/.node/lib/node_modules/npm/node_modules/request/request.js:354:22)
+28 verbose stack     at Request.emit (events.js:110:17)
+28 verbose stack     at Request.<anonymous> (/Users/Duncan/.node/lib/node_modules/npm/node_modules/request/request.js:1207:14)
+28 verbose stack     at Request.emit (events.js:129:20)
+28 verbose stack     at IncomingMessage.<anonymous> (/Users/Duncan/.node/lib/node_modules/npm/node_modules/request/request.js:1153:12)
+28 verbose stack     at IncomingMessage.emit (events.js:129:20)
+28 verbose stack     at _stream_readable.js:908:16
+28 verbose stack     at process._tickCallback (node.js:355:11)
+29 verbose statusCode 404
+30 verbose pkgid sea_d49_greet
+31 verbose cwd /Users/Duncan/cf
+32 error Darwin 14.4.0
+33 error argv "/Users/Duncan/.node/bin/node" "/Users/Duncan/.node/bin/npm" "install" "sea_d49_greet"
+34 error node v0.12.7
+35 error npm  v2.11.3
+36 error code E404
+37 error 404 Registry returned 404 for GET on https://registry.npmjs.org/sea_d49_greet
+37 error 404
+37 error 404 'sea_d49_greet' is not in the npm registry.
+37 error 404 You should bug the author to publish it (or use the name yourself!)
+37 error 404
+37 error 404 Note that you can also install from a
+37 error 404 tarball, folder, http url, or git url.
+38 verbose exit [ 1, true ]
